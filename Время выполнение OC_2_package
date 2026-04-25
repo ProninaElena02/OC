@@ -1,0 +1,50 @@
+                                                                                 
+┌──(kali㉿kali)-[~/Documents]
+└─$ time ./OC_2_package -a "awrc" -n 10 -h '$6$saltddf$9vp5HBN0ORbm7Lvt2Kv.R.mpv65WH8CTkPPjCe4fLC5EtNZT4tINT/7b04l7mWBFdUhRntxC1mrhvqudqKznz0' -s '$6$saltddf' -j 2
+wwwwwwwwww
+
+real    356.96s
+user    579.41s
+sys     95.99s
+cpu     189%
+                                                                                                                                               
+┌──(kali㉿kali)-[~/Documents]
+└─$ time ./OC_2_package -a "awrc" -n 10 -h '$6$saltddf$9vp5HBN0ORbm7Lvt2Kv.R.mpv65WH8CTkPPjCe4fLC5EtNZT4tINT/7b04l7mWBFdUhRntxC1mrhvqudqKznz0' -s '$6$saltddf' -j 4
+wwwwwwwwww
+
+real    233.13s
+user    451.79s
+sys     10.44s
+cpu     198%
+                                                                                                                                               
+┌──(kali㉿kali)-[~/Documents]
+└─$ time ./OC_2_package -a "awrc" -n 10 -h '$6$saltddf$9vp5HBN0ORbm7Lvt2Kv.R.mpv65WH8CTkPPjCe4fLC5EtNZT4tINT/7b04l7mWBFdUhRntxC1mrhvqudqKznz0' -s '$6$saltddf' -j 8 
+wwwwwwwwww
+
+real    221.85s
+user    434.25s
+sys     6.51s
+cpu     198%
+                                                                                                                                               
+┌──(kali㉿kali)-[~/Documents]
+└─$ time ./OC_2_package -a "awrc" -n 10 -h '$6$saltddf$9vp5HBN0ORbm7Lvt2Kv.R.mpv65WH8CTkPPjCe4fLC5EtNZT4tINT/7b04l7mWBFdUhRntxC1mrhvqudqKznz0' -s '$6$saltddf' -j 12
+wwwwwwwwww
+
+real    203.42s
+user    398.57s
+sys     5.90s
+cpu     198%
+                                                                                                                                               
+┌──(kali㉿kali)-[~/Documents]
+└─$ time ./OC_2_package -a "awrc" -n 10 -h '$6$saltddf$9vp5HBN0ORbm7Lvt2Kv.R.mpv65WH8CTkPPjCe4fLC5EtNZT4tINT/7b04l7mWBFdUhRntxC1mrhvqudqKznz0' -s '$6$saltddf' -j 16
+wwwwwwwwww
+
+real    251.87s
+user    495.18s
+sys     6.25s
+cpu     199%
+                                                                                                                                               
+
+                                                                                                                                               
+┌──(kali㉿kali)-[~/Documents]
+└─$ 

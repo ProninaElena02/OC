@@ -45,6 +45,31 @@ sys     6.25s
 cpu     199%
                                                                                                                                                
 
-                                                                                                                                               
-┌──(kali㉿kali)-[~/Documents]
-└─$ 
+Результаты на 8-ми ядрах:
+
+(vulki@kali)-[~/Desktop]
+$ time ./brute -a "awrc" -n 10 -h '$6$saltddf$9vp5HBN00Rbm7Lvt2Kv.R.mpv65WH8CTkPPjCe4fLC5EtNZT4tINT/7b04l7mWBFdUhR ntxC1mrhvqudqKznz0' -s '$6$saltddf' -j 2
+
+real    167.37s
+user    334.50s
+sys     0.04s
+cpu     199%
+
+(vulki@kali)-[~/Desktop]
+$ time ./brute -a "awrc" -n 10 -h '$6$saltddf$9vp5HBN00Rbm7Lvt2Kv.R.mpv65WH8CTkPPjCe4fLC5EtNZT4tINT/7b04l7mWBFdUhR ntxC1mrhvqudqKznz0' -s '$6$saltddf' -j 4
+
+real    104.35s
+user    417.12s
+sys     0.03s
+cpu     399%
+
+
+(vulki@kali)-[~/Desktop]
+$ time ./brute -a "awrc" -n 10 -h '$6$saltddf$9vp5HBN00Rbm7Lvt2Kv.R.mpv65WH8CTkPPjCe4fLC5EtNZT4tINT/7b04l7mWBFdUhR ntxC1mrhvqudqKznz0' -s '$6$saltddf' -j 8
+
+real    51.84s
+user    417.86s
+sys     0.02s
+cpu     806%
+
+
